@@ -21,13 +21,19 @@ function SingleBeer() {
    return (
         <div>
             <Header />
-            <img src={beer.image_url} alt="beer" />
-            <h1>{beer.name}</h1>
-            <h2>{beer.tagline}</h2>
-            <h2>{beer.first_brewed}</h2>
-            <p>{beer.attenuation_level}</p>
-            <p>{beer.description}</p>
-            <p>{beer.contributed_by}</p>
+            <div className="product">
+                <img src={beer.image_url} width={100} alt="beerimage"/>
+                <div className="nameValue">
+                    <h1>{beer.name}</h1>
+                    <p>{beer.attenuation_level}</p>
+                </div>
+                <div className="taglineDate">
+                    <p className="tagline1">{beer.tagline}</p>
+                    <p className="tagline2">{beer.first_brewed}</p>
+                </div> 
+                <p className="description">{beer.description}</p>
+                <p className="contributed">{beer.contributed_by}</p>
+            </div>
         </div>
    )
 }

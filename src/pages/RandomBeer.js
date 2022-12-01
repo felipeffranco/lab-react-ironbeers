@@ -17,15 +17,20 @@ const RandomBeer = () => {
 
        return (
         <div>
-            <Header></Header>
-            <h1>Random One</h1>
-            <img src={random.image_url} width={100} alt="beerimage"/>
-            <h1>{random.name}</h1>
-            <p>{random.tagline}</p>
-            <p>{random.first_brewed}</p>
-            <p>{random.attenuation_level}</p>
-            <p>{random.description}</p>
-            <p>{random.contributed_by}</p>  
+            <Header />
+            <div className="product">
+                <img src={random.image_url} width={100} alt="beerimage"/>
+                <div className="nameValue">
+                    <h1>{random.name}</h1>
+                    <p>{random.attenuation_level}</p>
+                </div>
+                <div className="taglineDate">
+                    <p className="tagline1">{random.tagline}</p>
+                    <p className="tagline2">{random.first_brewed}</p>
+                </div> 
+                <p className="description">{random.description}</p>
+                <p className="contributed">{random.contributed_by}</p>
+            </div>
         </div>
        )
 }

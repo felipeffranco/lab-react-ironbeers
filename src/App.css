@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem 0 0 0;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .addForm label {
@@ -116,14 +116,14 @@
 
 .addForm input {
   height: 2rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgb(168, 168, 168);
+  border-radius: 0.8rem;
+  border: 1px solid rgb(209, 209, 209);
   text-indent: 0.5rem;
 }
 
 .addForm textarea {
-  border-radius: 0.5rem;
-  border: 1px solid rgb(168, 168, 168);
+  border-radius: 0.8rem;
+  border: 1px solid rgb(209, 209, 209);
   text-indent: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -138,4 +138,69 @@
   height: 2rem;
   border-radius: 1rem;
   border: 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; 
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+
+.product img {
+  width: 25%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+.product .nameValue {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.product .nameValue h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.product .nameValue p {
+  font-size: 1.4rem;
+  color:rgb(165, 165, 165)
+}
+
+.product .taglineDate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.product .taglineDate .tagline1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color:rgb(165, 165, 165)
+}
+
+.product .taglineDate .tagline2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product .description {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.product .contributed {
+  width: 100%;
+  text-align: left;
+  color:rgb(165, 165, 165);
+  font-weight: bold;
 }
